@@ -4,7 +4,8 @@ public class ONUInfo {
 	
 	private String loid;
 	private String number;
-	private int svlan;
+	private int oldSvlan;
+	private int newSvlan;
 	private int cvlan;
 	public String getLoid() {
 		return loid;
@@ -18,11 +19,17 @@ public class ONUInfo {
 	public void setNumber(String number) {
 		this.number = number;
 	}
-	public int getSvlan() {
-		return svlan;
+	public int getOldSvlan() {
+		return oldSvlan;
 	}
-	public void setSvlan(int svlan) {
-		this.svlan = svlan;
+	public void setOldSvlan(int oldSvlan) {
+		this.oldSvlan = oldSvlan;
+	}
+	public int getNewSvlan() {
+		return newSvlan;
+	}
+	public void setNewSvlan(int newSvlan) {
+		this.newSvlan = newSvlan;
 	}
 	public int getCvlan() {
 		return cvlan;
@@ -32,7 +39,8 @@ public class ONUInfo {
 	}
 	@Override
 	public String toString() {
-		return "ONUInfo [loid=" + loid + ", number=" + number + ", svlan=" + svlan + ", cvlan=" + cvlan + "]";
+		return "ONUInfo [loid=" + loid + ", number=" + number + ", oldSvlan=" + oldSvlan + ", newSvlan=" + newSvlan
+				+ ", cvlan=" + cvlan + "]";
 	}
 	
 	
