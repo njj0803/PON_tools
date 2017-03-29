@@ -7,11 +7,11 @@ public class App {
 	public static void main(String[] args) {
 		 long starTime=System.currentTimeMillis();
 		Tool tool = new Tool();
-		String path = "C:\\Users\\Äß¾§¾§\\Desktop\\Æô¶«Ìø°å_2017-03-29_19-39-16.log";
+		String path = "C:\\Users\\njj08\\Desktop\\å¯ä¸œè·³æ¿_2017-03-29_19-39-16.log";
 		tool.splitFile(path,762);
 		 long endTime=System.currentTimeMillis();
 		 long totalTime = endTime - starTime; 
-		 System.out.println("ÒÑ³É¹¦Éú³É½Å±¾£¬×Ü¹²ºÄÊ±"+totalTime+"ms");
+		 System.out.println("æˆåŠŸç”Ÿæˆè„šæœ¬ï¼Œæ€»å…±è€—æ—¶ï¼š"+totalTime+"ms");
 	}
 
 }

@@ -23,8 +23,8 @@ public class Tool {
 			List<String> secList = new ArrayList<>();
 			List<Integer> flags = new LinkedList<>();
 			File file = new File(path);
-			if (file.isFile() && file.exists()) { // ÅĞ¶ÏÎÄ¼şÊÇ·ñ´æÔÚ
-				InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);// ¿¼ÂÇµ½±àÂë¸ñÊ½
+			if (file.isFile() && file.exists()) { 
+				InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);// ï¿½ï¿½ï¿½Çµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
 				BufferedReader bufferedReader = new BufferedReader(read);
 				String line = null;
 				while ((line = bufferedReader.readLine()) != null) {
@@ -48,7 +48,7 @@ public class Tool {
 				}
 				read.close();
 			} else {
-				System.out.println("ÕÒ²»µ½Ö¸¶¨µÄÎÄ¼ş");
+				System.out.println("ä¸æ˜¯ä¸€ä¸ªæœ‰æ•ˆçš„æ—¥å¿—æ–‡ä»¶");
 			}
 			for (String str : list) {
 				System.out.println(str);
@@ -56,7 +56,6 @@ public class Tool {
 			
 
 		} catch (Exception e) {
-			System.out.println("¶ÁÈ¡ÎÄ¼şÄÚÈİ³ö´í");
 			e.printStackTrace();
 		}
 
@@ -68,8 +67,8 @@ public class Tool {
 
 			List<ONUInfo> mapList = new ArrayList<>();
 			File file = new File(path);
-			if (file.isFile() && file.exists()) { // ÅĞ¶ÏÎÄ¼şÊÇ·ñ´æÔÚ
-				InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);// ¿¼ÂÇµ½±àÂë¸ñÊ½
+			if (file.isFile() && file.exists()) { // ï¿½Ğ¶ï¿½ï¿½Ä¼ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
+				InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);// ï¿½ï¿½ï¿½Çµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
 				BufferedReader bufferedReader = new BufferedReader(read);
 				String lineTxt = null;
 				while ((lineTxt = bufferedReader.readLine()) != null) {
@@ -84,10 +83,10 @@ public class Tool {
 				}
 				read.close();
 			} else {
-				System.out.println("ÕÒ²»µ½Ö¸¶¨µÄÎÄ¼ş");
+				System.out.println("ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½");
 			}
 		} catch (Exception e) {
-			System.out.println("¶ÁÈ¡ÎÄ¼şÄÚÈİ³ö´í");
+			System.out.println("ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½İ³ï¿½ï¿½ï¿½");
 			e.printStackTrace();
 		}
 
