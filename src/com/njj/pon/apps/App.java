@@ -2,9 +2,11 @@ package com.njj.pon.apps;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Map;
 import java.util.Scanner;
 
 import com.njj.pon.tools.Tool;
+import com.njj.pon.tools.ConfigTool;
 
 public class App {
 
@@ -12,7 +14,7 @@ public class App {
 	public static final int MAX_TIMES = 5;
 
 	public static void main(String[] args) {
-		SimpleDateFormat df = new SimpleDateFormat("yyyy MM-dd-HH");
+		SimpleDateFormat df = new SimpleDateFormat("yyyy MM-dd");
 		String dd = df.format(new Date());
 		System.out.println("********************" + "PON口割接工具Beta1.0-命令行版" + "********************");
 		System.out.println("		Build " + dd + " 作者：倪晶晶");
@@ -38,21 +40,49 @@ public class App {
 
 			if (chose1.equals("1")) {
 				System.out.println("1.7342->5680 单PON口割接");
-				System.out.print("请输入CRT记录的日志文件路径：");
-				String path = sc.nextLine();
-				System.out.print("请输入旧的外层VLAN：");
-				String oldSvlan = sc.nextLine();
-				System.out.print("请输入新的外层VLAN：");
-				String newSvlan = sc.nextLine();
-				System.out.print("请输入旧的PON口(例：1-1-2-1)：");
-				String oldPort = sc.nextLine();
-				System.out.print("请输入新的PON口(例:0/2/1)：");
-				String newport = sc.nextLine();
-				System.out.print("请输入起始的ServicePort：");
-				String servicePort = sc.nextLine();
+				
+				
+				ConfigTool tool = new ConfigTool();
+				Map<String, String> map = tool.readConfig();
+				if (map != null) {
+					for (Map.Entry<String, String> entry : map.entrySet()) {
+						String key = entry.getKey() ;
+						String value = entry.getValue();
+						if(key.equals("logpath")){
+							value = value.replace('\\', '/');
+							
+						}
+						System.out.println(key+":"+value);
+					}
+
+				} else {
+					System.out.println("读取配置文件错误");
+				}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+//				System.out.print("请输入CRT记录的日志文件路径：");
+//				String path = sc.nextLine();
+//				System.out.print("请输入旧的外层VLAN：");
+//				String oldSvlan = sc.nextLine();
+//				System.out.print("请输入新的外层VLAN：");
+//				String newSvlan = sc.nextLine();
+//				System.out.print("请输入旧的PON口(例：1-1-2-1)：");
+//				String oldPort = sc.nextLine();
+//				System.out.print("请输入新的PON口(例:0/2/1)：");
+//				String newport = sc.nextLine();
+//				System.out.print("请输入起始的ServicePort：");
+//				String servicePort = sc.nextLine();
 				long starTime = System.currentTimeMillis();
-				Tool tool = new Tool();
-				tool.singleEpon(path, oldSvlan, newSvlan, oldPort, newport, servicePort);
+//				Tool tool = new Tool();
+//				tool.singleEpon(path, oldSvlan, newSvlan, oldPort, newport, servicePort);
 				long endTime = System.currentTimeMillis();
 				long totalTime = endTime - starTime;
 				System.out.println("成功生成脚本，总共耗时：" + totalTime + "ms");
