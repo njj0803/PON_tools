@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	所有填写的内容不区分大小写
+	pon:PON类型 填epon或者gpon
+	multile：是否为多PON口割接 填true或者false
+	logpath：日志文件的路径 C:\启东跳板_2017-03-29_19-39-16.log
+	oldsvlan：原来的外层VLAN 762
+	oldport：原来的PON口(多PON口割接为起始PON口)，格式安照CRT显示的格式，7342：1-1-2-1 7360：1/1/2/1
+	newsvlan：新的外层VLAN 581
+	newport： 新的PON口(多PON口割接为起始PON口)　0/5/3　
+	serviceport：起始的serviceport 1826
+ -->
+ 
+<content>
+	<pon>epon</pon>
+	<multile>false</multile>
+	<logpath>C:\Users\倪晶晶\Desktop\启东跳板_2017-03-29_19-39-16.log</logpath>
+	<oldsvlan>762</oldsvlan>
+	<oldport>1-1-2-1</oldport>
+	<newsvlan>581</newsvlan>
+	<newport>0/5/3</newport>
+	<serviceport>1826</serviceport>
+</content>
+
