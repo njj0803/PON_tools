@@ -64,7 +64,8 @@ public class App {
 				System.out.println("功能开发中，敬请期待...");
 				break;
 			} else if (chose1.equals("3")) {
-				System.out.println("3.7360->5680 多PON口割接");
+				System.out.println("3.7360->5680单PON口割接");
+				String path = "‪C:\\Users\\倪晶晶\\Desktop\\session.log";
 				System.out.println("功能开发中，敬请期待...");
 				break;
 			} else if (chose1.equals("4")) {
