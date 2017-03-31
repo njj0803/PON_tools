@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-	所有填写的内容不区分大小写
+	所有填写的内容区分大小写
 	pon:PON类型 填epon或者gpon
 	multile：是否为多PON口割接 填true或者false
 	logpath：日志文件的路径 C:\启东跳板_2017-03-29_19-39-16.log
