@@ -4,9 +4,12 @@ public class ONUInfo {
 	
 	private String loid;
 	private String number;
-	private int oldSvlan;
-	private int newSvlan;
-	private int cvlan;
+	private String oldSvlan;
+	private String newSvlan;
+	private String cvlan;
+	private String oldPort;
+	private String newPort;
+	
 	public String getLoid() {
 		return loid;
 	}
@@ -19,29 +22,42 @@ public class ONUInfo {
 	public void setNumber(String number) {
 		this.number = number;
 	}
-	public int getOldSvlan() {
+	public String getOldSvlan() {
 		return oldSvlan;
 	}
-	public void setOldSvlan(int oldSvlan) {
+	public void setOldSvlan(String oldSvlan) {
 		this.oldSvlan = oldSvlan;
 	}
-	public int getNewSvlan() {
+	public String getNewSvlan() {
 		return newSvlan;
 	}
-	public void setNewSvlan(int newSvlan) {
+	public void setNewSvlan(String newSvlan) {
 		this.newSvlan = newSvlan;
 	}
-	public int getCvlan() {
+	public String getCvlan() {
 		return cvlan;
 	}
-	public void setCvlan(int cvlan) {
+	public void setCvlan(String cvlan) {
 		this.cvlan = cvlan;
+	}
+	public String getOldPort() {
+		return oldPort;
+	}
+	public void setOldPort(String oldPort) {
+		this.oldPort = oldPort;
+	}
+	public String getNewPort() {
+		return newPort;
+	}
+	public void setNewPort(String newPort) {
+		this.newPort = newPort;
 	}
 	@Override
 	public String toString() {
 		return "ONUInfo [loid=" + loid + ", number=" + number + ", oldSvlan=" + oldSvlan + ", newSvlan=" + newSvlan
-				+ ", cvlan=" + cvlan + "]";
+				+ ", cvlan=" + cvlan + ", oldPort=" + oldPort + ", newPort=" + newPort + "]";
 	}
+	
 	
 	
 
