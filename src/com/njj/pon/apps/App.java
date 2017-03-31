@@ -2,6 +2,8 @@ package com.njj.pon.apps;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -40,54 +42,40 @@ public class App {
 
 			if (chose1.equals("1")) {
 				System.out.println("1.7342->5680 单PON口割接");
-				
-				
-				ConfigTool tool = new ConfigTool();
-				Map<String, String> map = tool.readConfig();
+
+				long starTime = System.currentTimeMillis();
+				ConfigTool conf = new ConfigTool();
+				Map<String, String> map = conf.readConfig();
 				if (map != null) {
-					for (Map.Entry<String, String> entry : map.entrySet()) {
-						String key = entry.getKey() ;
-						String value = entry.getValue();
-						if(key.equals("logpath")){
-							value = value.replace('\\', '/');
-							
-						}
-						System.out.println(key+":"+value);
-					}
+					Tool tool = new Tool();
+					tool.singleEpon(map);
+					long endTime = System.currentTimeMillis();
+					long totalTime = endTime - starTime;
+					System.out.println("成功生成脚本，总共耗时：" + totalTime + "ms");
+
+					break;
 
 				} else {
-					System.out.println("读取配置文件错误");
+					System.out.println("读取配置文件错误,程序自动退出！");
+					System.exit(0);
 				}
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-//				System.out.print("请输入CRT记录的日志文件路径：");
-//				String path = sc.nextLine();
-//				System.out.print("请输入旧的外层VLAN：");
-//				String oldSvlan = sc.nextLine();
-//				System.out.print("请输入新的外层VLAN：");
-//				String newSvlan = sc.nextLine();
-//				System.out.print("请输入旧的PON口(例：1-1-2-1)：");
-//				String oldPort = sc.nextLine();
-//				System.out.print("请输入新的PON口(例:0/2/1)：");
-//				String newport = sc.nextLine();
-//				System.out.print("请输入起始的ServicePort：");
-//				String servicePort = sc.nextLine();
-				long starTime = System.currentTimeMillis();
-//				Tool tool = new Tool();
-//				tool.singleEpon(path, oldSvlan, newSvlan, oldPort, newport, servicePort);
-				long endTime = System.currentTimeMillis();
-				long totalTime = endTime - starTime;
-				System.out.println("成功生成脚本，总共耗时：" + totalTime + "ms");
-				
-				break;
+
+				// System.out.print("请输入CRT记录的日志文件路径：");
+				// String path = sc.nextLine();
+				// System.out.print("请输入旧的外层VLAN：");
+				// String oldSvlan = sc.nextLine();
+				// System.out.print("请输入新的外层VLAN：");
+				// String newSvlan = sc.nextLine();
+				// System.out.print("请输入旧的PON口(例：1-1-2-1)：");
+				// String oldPort = sc.nextLine();
+				// System.out.print("请输入新的PON口(例:0/2/1)：");
+				// String newport = sc.nextLine();
+				// System.out.print("请输入起始的ServicePort：");
+				// String servicePort = sc.nextLine();
+
+				// Tool tool = new Tool();
+				// tool.singleEpon(path, oldSvlan, newSvlan, oldPort, newport,
+				// servicePort);
 
 			} else if (chose1.equals("2")) {
 				System.out.println("2.7342->5680 多PON口割接");
@@ -112,8 +100,6 @@ public class App {
 			sc.close();
 
 		}
-
-
 
 	}
 

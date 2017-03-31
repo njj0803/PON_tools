@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author 倪晶晶
@@ -26,35 +27,32 @@ public class Tool {
 	private List<String> outServicePortList = new LinkedList<>();
 	private List<String> outBTVList = new LinkedList<>();
 
-	public boolean readConfig(String path){
+	public boolean readConfig(String path) {
 		boolean flag = true;
 		return flag;
 	}
-	
+
 	public void singleGpon(String path, String oldSvlan, String newSvlan, String oldPort, String newPort,
 			String servicePort) throws Exception {
-		
+
 		String encoding = "utf-8";
 		List<String> list = new ArrayList<>();
 		List<String> idList = new ArrayList<>();
 		List<String> vlanList = new ArrayList<>();
 		File file = new File(path);
-		if (file.isFile() && file.exists()){
+		if (file.isFile() && file.exists()) {
 			System.out.println("正在读取日志文件...");
 			InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);
 			BufferedReader bufferedReader = new BufferedReader(read);
 			String line = null;
-			while ((line = bufferedReader.readLine()) != null){
-				
+			while ((line = bufferedReader.readLine()) != null) {
+
 			}
-			
-		}else{
+
+		} else {
 			System.out.println("不是一个有效的日志文件,程序结束！");
 			System.exit(0);
 		}
-		
-		
-		
 
 	}
 
@@ -256,8 +254,14 @@ public class Tool {
 	 * @param servicePort
 	 *            起始service-port索引
 	 */
-	public void singleEpon(String path, String oldSvlan, String newSvlan, String oldPort, String newPort,
-			String servicePort) {
+	public void singleEpon(Map<String, String> map) {
+		String pon = map.get("pon");
+		String path = map.get("logpath");
+		String oldSvlan = map.get("oldsvlan");
+		String newSvlan = map.get("newsvlan");
+		String oldPort = map.get("oldport");
+		String newPort = map.get("newport");
+		String servicePort = map.get("serviceport");
 
 		try {
 			String encoding = "utf-8";

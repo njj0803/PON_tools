@@ -1,7 +1,7 @@
 package com.njj.pon.tools;
 
 import java.io.File;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import org.dom4j.Document;
@@ -23,11 +23,16 @@ public class ConfigTool {
 		Element root = doc.getRootElement();
 		List<?> list = root.elements();
 		if (checkConfig(list)){
-			map = new HashMap<>();
+			map = new LinkedHashMap<>();
 			for (Object obj : list){
 				Element element = (Element) obj;
 				String name = element.getName();
 				String text = element.getText();
+				if(name.equals("logpath"))
+				{
+					System.out.println("logpath");
+					text = text.replace('\\','/');
+				}
 				map.put(name, text);
 			}
 		}
