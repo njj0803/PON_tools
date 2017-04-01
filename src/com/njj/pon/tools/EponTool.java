@@ -8,7 +8,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
-import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -21,40 +20,12 @@ import java.util.Map;
  *
  */
 
-public class Tool {
+public class EponTool {
 
 	private List<String> outLoidList = new LinkedList<>();
 	private List<String> outServicePortList = new LinkedList<>();
 	private List<String> outBTVList = new LinkedList<>();
 
-	public boolean readConfig(String path) {
-		boolean flag = true;
-		return flag;
-	}
-
-	public void singleGpon(String path, String oldSvlan, String newSvlan, String oldPort, String newPort,
-			String servicePort) throws Exception {
-
-		String encoding = "utf-8";
-		List<String> list = new ArrayList<>();
-		List<String> idList = new ArrayList<>();
-		List<String> vlanList = new ArrayList<>();
-		File file = new File(path);
-		if (file.isFile() && file.exists()) {
-			System.out.println("正在读取日志文件...");
-			InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);
-			BufferedReader bufferedReader = new BufferedReader(read);
-			String line = null;
-			while ((line = bufferedReader.readLine()) != null) {
-
-			}
-
-		} else {
-			System.out.println("不是一个有效的日志文件,程序结束！");
-			System.exit(0);
-		}
-
-	}
 
 	/**
 	 * @param file
@@ -190,6 +161,7 @@ public class Tool {
 		for (String str : outBTVList) {
 			ps.println(str);
 		}
+		ps.close();
 
 	}
 
@@ -255,11 +227,9 @@ public class Tool {
 	 *            起始service-port索引
 	 */
 	public void singleEpon(Map<String, String> map) {
-		String pon = map.get("pon");
-		String path = map.get("logpath");
 		String oldSvlan = map.get("oldsvlan");
 		String newSvlan = map.get("newsvlan");
-		String oldPort = map.get("oldport");
+//		String oldPort = map.get("oldport");
 		String newPort = map.get("newport");
 		String servicePort = map.get("serviceport");
 
@@ -268,7 +238,7 @@ public class Tool {
 			List<String> list = new ArrayList<>();
 			List<String> idList = new ArrayList<>();
 			List<String> vlanList = new ArrayList<>();
-			File file = new File(path);
+			File file = new File("session.log");
 			if (file.isFile() && file.exists()) {
 				System.out.println("正在读取日志文件...");
 				InputStreamReader read = new InputStreamReader(new FileInputStream(file), encoding);
@@ -295,7 +265,7 @@ public class Tool {
 				read.close();
 
 			} else {
-				System.out.println("不是一个有效的日志文件,程序结束！");
+				System.out.println("没有找到日志文件,程序结束！");
 				System.exit(0);
 			}
 			String tmp = "";
@@ -321,15 +291,16 @@ public class Tool {
 			if (isOK(idList, vlanList)) {
 				System.out.println("信息比对成功，正在生成割接脚本...");
 
-				String dir = "C:\\7342To5680\\";
+				String dir = "output/";
 				SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");
-				String name = df.format(new Date()) + ".txt";
+				String name = "epon_"+df.format(new Date()) + ".txt";
 
 				if (writeToFile(dir, name, idList, vlanList, newSvlan, newPort, servicePort)) {
 					System.out.println("生成脚本成功！");
 					System.out.println(dir + name);
 				} else {
-					System.out.println("生成脚本失败！");
+					System.out.println("生成脚本失败！程序结束");
+					System.exit(0);
 				}
 			} else {
 				System.out.println("信息比对失败，请检查日志文件！");

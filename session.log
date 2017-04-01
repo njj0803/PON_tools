@@ -1,886 +1,498 @@
-﻿NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/[1...64]
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/1       
+[BEGIN] 2017/3/29 19:39:29
+<  
 
-17/03/30 17:23:07 major alarm occurred for ont 1/1/3/7/33 (service affecting) : Signal Degraded from ONT
+   NTQD-BX-7342-02 17-03-29 19:40:03 
+*  60451 REPT ALM EONT 
+   "ONT-1-1-2-6-44:MN,EDG,SA,12-27,8-30-31: 
+   \"Received Dying Gasp indication from ONT\"" 
+; 
 
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/1 sw-ver-pland disabled
-  desc2 moo^
-  sernum ALCL:F8C1F2FE
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  log-auth-id 133CC0EAC9D9B2A9
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/2
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/2 sw-ver-pland disabled
-  desc2 moo^
-  sernum ALCL:F8C1E2B0
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  log-auth-id 1306B82630BAC8CC
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/3
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/3 sw-ver-pland disabled
-  desc2 moo^
-  sernum ALCL:F8DAF090
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  log-auth-id 13010A3B0BAAACAC
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/4
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/4 sw-ver-pland disabled
-  desc2 moo^
-  sernum HWTC:0062BB59
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  voip-allowed enable
-  log-auth-id 13C4ACBA8051B170
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/5
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/5 sw-ver-pland disabled
-  desc2 moo^
-  sernum ZTEG:C106AA5D
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  voip-allowed enable
-  log-auth-id 13328178C5DCED98
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/6
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/6 sw-ver-pland disabled
-  desc2 moo^
-  sernum ALCL:F8C1E7DA
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  log-auth-id 1340CA19B2A72B39
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/7
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/7 sw-ver-pland disabled
-  desc2 moo^
-  sernum ALCL:F8C1E82C
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  log-auth-id 133BAD1DC228AEC5
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/8
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/8 sw-ver-pland disabled
-  desc2 moo^
-  sernum HWTC:8257772A
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  voip-allowed enable
-  log-auth-id 13C3A9B0DBC3CE0A
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/9
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/9 sw-ver-pland disabled
-  desc2 moo^
-  sernum SCTY:0FF291B8
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  log-auth-id 130B1CABDB4CAEB0
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/10
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/10 sw-ver-pland disabled
-  desc2 moo^
-  sernum HWTC:4F9B6F57
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  voip-allowed enable
-  log-auth-id 13E5DAB49B9971D1
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/11
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/11 sw-ver-pland disabled
-  desc2 moo^
-  sernum ZTEG:C12CD03E
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  voip-allowed enable
-  log-auth-id 1328BA321DDDDED2
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/12
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/12 sw-ver-pland disabled
-  desc2 moo^
-  sernum ZTEG:C1068DC7
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  voip-allowed enable
-  log-auth-id 13AB34CCBAA41EDC
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/13
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/13 sw-ver-pland disabled
-  desc2 moo^
-  sernum HWTC:AD2A2E69
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  voip-allowed enable
-  log-auth-id 13247777916B6656
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/14
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/14 sw-ver-pland disabled
-  desc2 moo^
-  sernum ALCL:F8D7F64D
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  log-auth-id 133CA3483C5AB681
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/15
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/15 sw-ver-pland disabled
-  desc2 moo^
-  sernum YHTC:7BC7B93A
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  voip-allowed enable
-  log-auth-id 13ADC95BDE320DBD
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/16
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/16 sw-ver-pland disabled
-  desc2 moo^
-  sernum HWTC:AD28E169
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  voip-allowed enable
-  log-auth-id 13B600D69944CD3D
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/17
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/17 sw-ver-pland disabled
-  desc2 moo^
-  sernum SCTY:0F267EF8
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  voip-allowed enable
-  log-auth-id 13C0B2BD84DA8CA7
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/18
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/18 sw-ver-pland disabled
-  desc2 moo^
-  sernum ZTEG:C12D16C7
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  voip-allowed enable
-  log-auth-id 13319BA50996973A
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/19
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/19 sw-ver-pland disabled
-  desc2 moo^
-  sernum YHTC:9FEFF440
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  voip-allowed enable
-  log-auth-id 131C4EA1AEAABCE8
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/20
-configure equipment ont
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "equipment"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-interface 1/1/2/1/20 sw-ver-pland disabled
-  desc2 moo^
-  sernum SCTY:0F9110A0
-  subslocid WILDCARD
-  sw-dnload-version disabled
-  voip-allowed enable
-  log-auth-id 13A9385AA322D1A1
-  log-auth-pwd *****
-  admin-state up
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/21 
+<  
 
-Error : instance does not exist
+   NTQD-BX-7342-02 17-03-29 19:40:04 
+A  60452 REPT ALM EONT 
+   "ONT-1-1-3-5-19:CL,EDG,SA,3-29,19-40-4: 
+   \"Received Dying Gasp indication from ONT\"" 
+; 
 
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/[22...64]
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/22       
+< RTRV-EONT::ONT-1-1-1-2-1&&-64; 
 
-17/03/30 17:23:20 major alarm cleared for ont 1/1/3/7/33 (service affecting) : Signal Degraded from ONT
+IP 0 
 
- 
-Error : instance does not exist
+<  
 
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/[23...64]
-NTQD-CX-7360-01>#info configure equipment ont interface 1/1/2/1/23       
+   NTQD-BX-7342-02 17-03-29 19:40:29 
+M  0 COMPLD 
+   /* RTRV-EONT::ONT-1-1-1-2-1&&-64 */ 
+   "ONT-1-1-1-2-1::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"138DC9AB6062DD8B\",SWPLNDVER=\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,MACAGING=287,DNRATELIMITMODE=NONE, 
+   PYSICALLNDADMIN=DISABLED,SWUPGRADEMODE=NONE,ALARMADMIN=DISABLE, 
+   CONFSAVE=DISABLED,PLNDVAR=\"\",ONUIDMETHOD=LOGICALID,SLADN=DISABLED, 
+   SESSPROFDN=0,VLANLIMITRATEMODE=DISABLED, 
+   ACTUALMACADDR=\"98-f4-28-91-07-e0\",ONTVENDORID=\"ZTE\", 
+   ONTMODELID=\"F402\",ONTHWVER=,CHIPVENDORID=\"00BF\",CHIPMODELID=\"6838\", 
+   CHIPVER=\"0D0506\",BTRYBKUP=FALSE,SWVERACT=\"V5.0.0P1T1_JS130\", 
+   FMVER=\"10101\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON\",RTT=4920, 
+   DISTANCE=8040,MAXSUPPORTLLID=1,ASSGNLLID=15886,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-03-29,17:42:36\",DNTIME=\"17-03-29,06:02:20\", 
+   DOWNREASON=POWEROFF:IS-NR" 
+   "ONT-1-1-1-2-2::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"139827CAAA5651B1\",SWPLNDVER=\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,MACAGING=287,DNRATELIMITMODE=NONE, 
+   PYSICALLNDADMIN=DISABLED,SWUPGRADEMODE=NONE,ALARMADMIN=DISABLE, 
+   CONFSAVE=DISABLED,PLNDVAR=\"\",ONUIDMETHOD=LOGICALID,SLADN=DISABLED, 
+   SESSPROFDN=0,VLANLIMITRATEMODE=DISABLED, 
+   ACTUALMACADDR=\"10-d0-ab-57-23-d1\",ONTVENDORID=\"ZTE\", 
+   ONTMODELID=\"F402\",ONTHWVER=,CHIPVENDORID=\"00BF\",CHIPMODELID=\"6838\", 
+   CHIPVER=\"0D0506\",BTRYBKUP=FALSE,SWVERACT=\"V5.0.0P1T1_JS130\", 
+   FMVER=\"10101\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON\",RTT=4424, 
+   DISTANCE=7216,MAXSUPPORTLLID=1,ASSGNLLID=15882,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-02-02,13:32:24\",DNTIME=\"00-00-00,00:00:00\",DOWNREASON=NONE: 
+   IS-NR" 
+   "ONT-1-1-1-2-3::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"133D2D1E0ADC66D1\",SWPLNDVER=\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,MACAGING=287,DNRATELIMITMODE=NONE, 
+   PYSICALLNDADMIN=DISABLED,SWUPGRADEMODE=NONE,ALARMADMIN=DISABLE, 
+   CONFSAVE=DISABLED,PLNDVAR=\"\",ONUIDMETHOD=LOGICALID,SLADN=DISABLED, 
+   SESSPROFDN=0,VLANLIMITRATEMODE=DISABLED, 
+   ACTUALMACADDR=\"54-be-53-23-c5-e4\",ONTVENDORID=\"ZTE\", 
+   ONTMODELID=\"F412\",ONTHWVER=,CHIPVENDORID=\"00BF\",CHIPMODELID=\"6838\", 
+   CHIPVER=\"0D0506\",BTRYBKUP=FALSE,SWVERACT=\"V5.0.0P1T1_JS130\", 
+   FMVER=\"10101\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON\",RTT=4907, 
+   DISTANCE=8018,MAXSUPPORTLLID=1,ASSGNLLID=15876,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-02-20,07:43:31\",DNTIME=\"17-02-20,07:42:24\", 
+   DOWNREASON=POWEROFF:IS-NR" 
 
-Error : instance does not exist
+   /* More Output Follows */ 
+> 
 
-NTQD-CX-7360-01>#
+<  
 
-17/03/30 17:23:33 major alarm occurred for ont 1/1/3/7/33 (service affecting) : Signal Degraded from ONT
+   NTQD-BX-7342-02 17-03-29 19:40:34 
+M  0 COMPLD 
+   /* RTRV-EONT::ONT-1-1-1-2-1&&-64 */ 
+   "ONT-1-1-1-2-4::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"132A6AB13388D42C\",SWPLNDVER=\"MANUAL\",FE\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,MACAGING=287,DNRATELIMITMODE=NONE, 
+   PYSICALLNDADMIN=DISABLED,SWUPGRADEMODE=NONE,ALARMADMIN=DISABLE, 
+   CONFSAVE=DISABLED,PLNDVAR=\"\",ONUIDMETHOD=LOGICALID,SLADN=DISABLED, 
+   SESSPROFDN=0,VLANLIMITRATEMODE=DISABLED, 
+   ACTUALMACADDR=\"54-be-53-23-ca-fd\",ONTVENDORID=\"ZTE\", 
+   ONTMODELID=\"F412\",ONTHWVER=,CHIPVENDORID=\"00BF\",CHIPMODELID=\"6838\", 
+   CHIPVER=\"0D0506\",BTRYBKUP=FALSE,SWVERACT=\"V5.0.0P1T1_JS130\", 
+   FMVER=\"10101\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON\",RTT=4909, 
+   DISTANCE=8021,MAXSUPPORTLLID=1,ASSGNLLID=15877,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-03-18,18:09:55\",DNTIME=\"17-03-18,18:05:57\", 
+   DOWNREASON=POWEROFF:IS-NR" 
+   "ONT-1-1-1-2-5::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"13223E9AB6D2DCAC\",SWPLNDVER=\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,MACAGING=287,DNRATELIMITMODE=NONE, 
+   PYSICALLNDADMIN=DISABLED,SWUPGRADEMODE=NONE,ALARMADMIN=DISABLE, 
+   CONFSAVE=DISABLED,PLNDVAR=\"\",ONUIDMETHOD=LOGICALID,SLADN=DISABLED, 
+   SESSPROFDN=0,VLANLIMITRATEMODE=DISABLED, 
+   ACTUALMACADDR=\"54-be-53-23-ca-fd\",ONTVENDORID=\"ZTE\", 
+   ONTMODELID=\"F412\",ONTHWVER=,CHIPVENDORID=\"00BF\",CHIPMODELID=\"6838\", 
+   CHIPVER=\"0D0506\",BTRYBKUP=FALSE,SWVERACT=\"V5.0.0P1T1_JS130\", 
+   FMVER=\"10101\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON\",RTT=4909, 
+   DISTANCE=8021,MAXSUPPORTLLID=1,ASSGNLLID=15877,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-03-18,18:09:55\",DNTIME=\"17-03-18,18:05:57\", 
+   DOWNREASON=POWEROFF:IS-NR" 
 
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/[1...64]/14/1
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/1/14/1       
+   "ONT-1-1-1-2-6::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"13106CE0CBDDCDAC\",SWPLNDVER=\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,MACAGING=287,DNRATELIMITMODE=NONE, 
+   PYSICALLNDADMIN=DISABLED,SWUPGRADEMODE=NONE,ALARMADMIN=DISABLE, 
+   CONFSAVE=DISABLED,PLNDVAR=\"\",ONUIDMETHOD=LOGICALID,SLADN=DISABLED, 
+   SESSPROFDN=0,VLANLIMITRATEMODE=DISABLED, 
+   ACTUALMACADDR=\"54-be-53-23-c6-e9\",ONTVENDORID=\"ZTE\", 
+   ONTMODELID=\"F412\",ONTHWVER=,CHIPVENDORID=\"00BF\",CHIPMODELID=\"6838\", 
+   CHIPVER=\"0D0506\",BTRYBKUP=FALSE,SWVERACT=\"V5.0.0P1T1_JS130\", 
+   FMVER=\"10101\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON\",RTT=4910, 
+   DISTANCE=8023,MAXSUPPORTLLID=1,ASSGNLLID=15872,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-02-20,07:43:30\",DNTIME=\"17-02-20,07:42:24\", 
+   DOWNREASON=POWEROFF:IS-NR" 
 
-17/03/30 17:23:46 major alarm cleared for ont 1/1/3/7/33 (service affecting) : Signal Degraded from ONT
-17/03/30 17:24:00 minor alarm occurred for pon 1/1/1/7 : SERNUM =ALCLF8C1E5E1, SLID =DEFAULT                 , LOID =1384D7DBCD080E8C
+   /* More Output Follows */ 
+> 
 
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/1/14/1
-  max-unicast-mac 10
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 701
-    network-vlan stacked:553:701
-    vlan-scope local
-  exit
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/2/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/2/14/1
-  max-unicast-mac 10
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 702
-    network-vlan stacked:553:702
-    vlan-scope local
-  exit
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/3/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/3/14/1
-  max-unicast-mac 10
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 703
-    network-vlan stacked:553:703
-    vlan-scope local
-  exit
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/4/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/4/14/1
-  max-unicast-mac 10
-  vlan-id 40
-  exit
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 52
-    network-vlan stacked:553:52
-    vlan-scope local
-  exit
-  pvid 40
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/5/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/5/14/1
-  max-unicast-mac 10
-  vlan-id 40
-  exit
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 705
-    network-vlan stacked:553:705
-    vlan-scope local
-  exit
-  pvid 40
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/6/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/6/14/1
-  max-unicast-mac 10
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 706
-    network-vlan stacked:553:706
-    vlan-scope local
-  exit
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/7/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/7/14/1
-  max-unicast-mac 10
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 707
-    network-vlan stacked:553:707
-    vlan-scope local
-  exit
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/8/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/8/14/1
-  max-unicast-mac 10
-  vlan-id 40
-  exit
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 708
-    network-vlan stacked:553:708
-    vlan-scope local
-  exit
-  pvid 40
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/9/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/9/14/1
-  max-unicast-mac 10
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 709
-    network-vlan stacked:553:709
-    vlan-scope local
-  exit
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/10/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/10/14/1
-  max-unicast-mac 10
-  vlan-id 40
-  exit
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 51
-    network-vlan stacked:553:51
-    vlan-scope local
-  exit
-  pvid 40
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/11/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/11/14/1
-  max-unicast-mac 10
-  vlan-id 40
-  exit
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 711
-    network-vlan stacked:553:711
-    vlan-scope local
-  exit
-  pvid 40
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/12/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/12/14/1
-  max-unicast-mac 10
-  vlan-id 40
-  exit
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 712
-    network-vlan stacked:553:712
-    vlan-scope local
-  exit
-  pvid 40
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/13/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/13/14/1
-  max-unicast-mac 10
-  vlan-id 40
-  exit
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 710
-    network-vlan stacked:553:710
-    vlan-scope local
-  exit
-  pvid 40
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/14/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/14/14/1
-  max-unicast-mac 10
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 714
-    network-vlan stacked:553:714
-    vlan-scope local
-  exit
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/15/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/15/14/1
-  max-unicast-mac 10
-  vlan-id 40
-  exit
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 53
-    network-vlan stacked:553:53
-    vlan-scope local
-  exit
-  pvid 40
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/16/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/16/14/1
-  max-unicast-mac 10
-  vlan-id 40
-  exit
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 54
-    network-vlan stacked:553:54
-    vlan-scope local
-  exit
-  pvid 40
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/17/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/17/14/1
-  max-unicast-mac 10
-  vlan-id 40
-  exit
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 713
-    network-vlan stacked:553:713
-    vlan-scope local
-  exit
-  pvid 40
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/18/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/18/14/1
-  max-unicast-mac 10
-  vlan-id 40
-  exit
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 718
-    network-vlan stacked:553:718
-    vlan-scope local
-  exit
-  pvid 40
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/19/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/19/14/1
-  max-unicast-mac 10
-  vlan-id 40
-  exit
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 715
-    network-vlan stacked:553:715
-    vlan-scope local
-  exit
-  pvid 40
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/20/14/1
-configure bridge
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-echo "bridge"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-port 1/1/2/1/20/14/1
-  max-unicast-mac 10
-  vlan-id 40
-  exit
-  vlan-id 42
-    network-vlan stacked:2953:42
-    vlan-scope local
-  exit
-  vlan-id 43
-    network-vlan stacked:2153:43
-    vlan-scope local
-  exit
-  vlan-id 45
-    network-vlan stacked:1353:45
-    vlan-scope local
-  exit
-  vlan-id 55
-    network-vlan stacked:553:55
-    vlan-scope local
-  exit
-  pvid 40
-exit
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NTQD-CX-7360-01>#info configure bridge port 1/1/2/1/21/14/1
+<  
 
-Error : specified lower-interface does not exist
+   NTQD-BX-7342-02 17-03-29 19:40:39 
+M  0 COMPLD 
+   /* RTRV-EONT::ONT-1-1-1-2-1&&-64 */ 
+   "ONT-1-1-1-2-7::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"1321AD3ECD628C23\",SWPLNDVER=\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,,CHIPVENDORID=\"00BF\",CHIPMODELID=\"6838\", 
+   CHIPVER=\"0D0506\",BTRYBKUP=FALSE,SWVERACT=\"V5.0.0P1T1_JS130\", 
+   FMVER=\"10101\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON\",RTT=4872, 
+   DISTANCE=7960,MAXSUPPORTLLID=1,ASSGNLLID=15880,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-02-20,07:43:33\",DNTIME=\"17-02-20,07:42:24\", 
+   DOWNREASON=POWEROFF:IS-NR" 
+   "ONT-1-1-1-2-8::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"13D0B2D2A5A95145\",SWPLNDVER=\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,MACAGING=287,DNRATELIMITMODE=NONE, 
+   PYSICALLNDADMIN=DISABLED,SWUPGRADEMODE=NONE,ALARMADMIN=DISABLE, 
+   CONFSAVE=DISABLED,PLNDVAR=\"\",ONUIDMETHOD=LOGICALID,SLADN=DISABLED, 
+   SESSPROFDN=0,VLANLIMITRATEMODE=DISABLED, 
+   ACTUALMACADDR=\"34-37-59-5e-21-e4\",ONTVENDORID=\"ZTE\", 
+   ONTMODELID=\"F412\",ONTHWVER=,CHIPVENDORID=\"00BF\",CHIPMODELID=\"6838\", 
+   CHIPVER=\"0D0506\",BTRYBKUP=FALSE,SWVERACT=\"V5.0.0P1T1_JS130\", 
+   FMVER=\"10101\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON\",RTT=4867, 
+   DISTANCE=7952,MAXSUPPORTLLID=1,ASSGNLLID=15879,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-02-20,07:43:32\",DNTIME=\"17-02-20,07:42:24\", 
+   DOWNREASON=POWEROFF:IS-NR" 
+   "ONT-1-1-1-2-9::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"13CB6B7482A4DD2D\",SWPLNDVER=\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,MACAGING=287,DNRATELIMITMODE=NONE, 
+   PYSICALLNDADMIN=DISABLED,SWUPGRADEMODE=NONE,ALARMADMIN=DISABLE, 
+   CONFSAVE=DISABLED,PLNDVAR=\"\",ONUIDMETHOD=LOGICALID,SLADN=DISABLED, 
+   SESSPROFDN=0,VLANLIMITRATEMODE=DISABLED, 
+   ACTUALMACADDR=\"c4-04-7b-e5-c6-8a\",ONTVENDORID=\"YHTC\", 
+   ONTMODELID=\"T622\",ONTHWVER=\"PT622V1.\",CHIPVENDORID=\"01F2\", 
+   CHIPMODELID=\"CCE4\",CHIPVER=\"0C060E\",BTRYBKUP=FALSE, 
+   SWVERACT=\"PT622_CT_JS1607\",FMVER=\"31323334\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON&CTC FAST\",RTT=4470, 
+   DISTANCE=7292,MAXSUPPORTLLID=8,ASSGNLLID=15874,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-02-26,11:41:17\",DNTIME=\"17-02-26,11:40:15\", 
+   DOWNREASON=PLUGOUT:IS-NR" 
 
+   /* More Output Follows */ 
+> 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:40:44 
+M  0 COMPLD 
+   /* RTRV-EONT::ONT-1-1-1-2-1&&-64 */ 
+   "ONT-1-1-1-2-10::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"13EAE29BA772A1B6\",SWPLNDVER=\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,MACAGING=287,DNRATELIMITMODE=NONE, 
+   PYSICALLNDADMIN=DISABLED,SWUPGRADEMODE=NONE,ALARMADMIN=DISABLE, 
+   CONFSAVE=DISABLED,PLNDVAR=\"\",ONUIDMETHOD=LOGICALID,SLADN=DISABLED, 
+   SESSPROFDN=0,VLANLIMITRATEMODE=DISABLED, 
+   ACTUALMACADDR=\"94-db-da-af-c7-85\",ONTVENDORID=\"HWTC\", 
+   ONTMODELID=\"020C\",ONTHWVER=\"5F7.A\",CHIPVENDORID=\"4536\", 
+   CHIPMODELID=\"6301\",CHIPVER=\"06091B\",BTRYBKUP=FALSE, 
+   SWVERACT=\"V3R015C10S120\",FMVER=\"32303130\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON&CTC FAST\",RTT=4492, 
+   DISTANCE=7329,MAXSUPPORTLLID=1,ASSGNLLID=15875,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-02-17,18:44:24\",DNTIME=\"17-02-17,18:43:46\", 
+   DOWNREASON=POWEROFF:IS-NR" 
+   "ONT-1-1-1-2-11::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"132DE4BC54AB332D\",SWPLNDVER=\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,MACAGING=287,DNRATELIMITMODE=NONE, 
+   PYSICALLNDADMIN=DISABLED,SWUPGRADEMODE=NONE,ALARMADMIN=DISABLE, 
+   CONFSAVE=DISABLED,PLNDVAR=\"\",ONUIDMETHOD=LOGICALID,SLADN=DISABLED, 
+   SESSPROFDN=0,VLANLIMITRATEMODE=DISABLED, 
+   ACTUALMACADDR=\"9c-52-f8-11-80-cf\",ONTVENDORID=\"HWTC\", 
+   ONTMODELID=\"120C\",ONTHWVER=\"397.A\",CHIPVENDORID=\"4536\", 
+   CHIPMODELID=\"6301\",CHIPVER=\"06091B\",BTRYBKUP=FALSE, 
+   SWVERACT=\"V3R015C10S120\",FMVER=\"32303130\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON&CTC FAST\",RTT=4621, 
+   DISTANCE=7543,MAXSUPPORTLLID=1,ASSGNLLID=15878,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-03-27,08:25:57\",DNTIME=\"17-03-27,08:22:40\", 
+   DOWNREASON=POWEROFF:IS-NR" 
+   "ONT-1-1-1-2-12::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"1318448A9C305A9B\",SWPLNDVER=\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,MACAGING=287,DNRATELIMITMODE=NONE, 
+   PYSICALLNDADMIN=DISABLED,SWUPGRADEMODE=NONE,ALARMADMIN=DISABLE, 
+   CONFSAVE=DISABLED,PLNDVAR=\"\",ONUIDMETHOD=LOGICALID,SLADN=DISABLED, 
+   SESSPROFDN=0,VLANLIMITRATEMODE=DISABLED, 
+   ACTUALMACADDR=\"10-d0-ab-21-6b-c6\",ONTVENDORID=\"ZTE\", 
+   ONTMODELID=\"F402\",ONTHWVER=,CHIPVENDORID=\"00BF\",CHIPMODELID=\"6838\", 
+   CHIPVER=\"0D0506\",BTRYBKUP=FALSE,SWVERACT=\"V5.0.0P1T1_JS130\", 
+   FMVER=\"10101\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON\",RTT=4744, 
+   DISTANCE=7747,MAXSUPPORTLLID=1,ASSGNLLID=15881,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-03-24,06:09:31\",DNTIME=\"17-03-23,19:25:11\", 
+   DOWNREASON=POWEROFF:IS-NR" 
+
+   /* More Output Follows */ 
+> 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:40:49 
+M  0 COMPLD 
+   /* RTRV-EONT::ONT-1-1-1-2-1&&-64 */ 
+   "ONT-1-1-1-2-13::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"134CE2AD5D4BC420\",SWPLNDVER=\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,MACAGING=287,DNRATELIMITMODE=NONE, 
+   PYSICALLNDADMIN=DISABLED,SWUPGRADEMODE=NONE,ALARMADMIN=DISABLE, 
+   CONFSAVE=DISABLED,PLNDVAR=\"\",ONUIDMETHOD=LOGICALID,SLADN=DISABLED, 
+   SESSPROFDN=0,VLANLIMITRATEMODE=DISABLED, 
+   ACTUALMACADDR=\"48-00-33-42-94-b5\",ONTVENDORID=\"TCH\", 
+   ONTMODELID=\"1404\",ONTHWVER=\"1400e4v1\",CHIPVENDORID=\"0000\", 
+   CHIPMODELID=\"9602\",CHIPVER=\"000006\",BTRYBKUP=FALSE, 
+   SWVERACT=\"TG1400CTE_E4_JS1\",FMVER=\"312e312e\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON&CTC FAST\",RTT=4827, 
+   DISTANCE=7885,MAXSUPPORTLLID=1,ASSGNLLID=15884,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-02-26,08:49:22\",DNTIME=\"17-02-26,08:48:32\", 
+   DOWNREASON=PLUGOUT:IS-NR" 
+   "ONT-1-1-1-2-14::MACADDR=\"00-00-00-00-00-00\", 
+   LOGICALAUID=\"131CA0AC15391CA8\",SWPLNDVER=\"MANUAL\",FECMODE=DISABLED, 
+   IGMPMODE=SNOOPING,FASTLEAVE=DISABLED,MACAGING=287,DNRATELIMITMODE=NONE, 
+   PYSICALLNDADMIN=DISABLED,SWUPGRADEMODE=NONE,ALARMADMIN=DISABLE, 
+   CONFSAVE=DISABLED,PLNDVAR=\"\",ONUIDMETHOD=LOGICALID,SLADN=DISABLED, 
+   SESSPROFDN=0,VLANLIMITRATEMODE=DISABLED, 
+   ACTUALMACADDR=\"48-00-33-42-94-51\",ONTVENDORID=\"TCH\", 
+   ONTMODELID=\"1404\",ONTHWVER=\"1400e4v1\",CHIPVENDORID=\"0000\", 
+   CHIPMODELID=\"9602\",CHIPVER=\"000006\",BTRYBKUP=FALSE, 
+   SWVERACT=\"TG1400CTE_E4_JS1\",FMVER=\"312e312e\",FECABILITY=SUPPORT, 
+   FASTLVEABILITY=\"SNOOPING NON&SNOOPING FAST&CTC NON&CTC FAST\",RTT=4414, 
+   DISTANCE=7199,MAXSUPPORTLLID=1,ASSGNLLID=15885,ASSGNQUP=0,ASSGNQDW=0, 
+   MAXQLLID=0,MAXQPORT=0,MAXLLID=0,ONTTYPE=HGU,ONTPROCTTYPE=NOSUPPORT, 
+   IPV6SENSE=NOSUPPORT,SFPPWRCTRLABILITY=NOSUPPORT, 
+   UPTIME=\"17-03-23,18:51:22\",DNTIME=\"17-03-23,18:50:25\", 
+   DOWNREASON=POWEROFF:IS-NR" 
+; 
+
+< RTRV-EOLTFLOW::ONT-1-1-1-2-1&&-64; 
+
+IP 0 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:43:23 
+*  60453 REPT ALM EONT 
+   "ONT-1-1-1-5-10:MN,EDG,SA,3-29,19-43-3: 
+   \"Received Dying Gasp indication from ONT\"" 
+; 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:42:26 
+M  0 COMPLD 
+   /* RTRV-EOLTFLOW::ONT-1-1-1-2-1&&-64 */ 
+   "OLTFLOW-1-1-1-2-1-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CVL,6=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-1-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CVL,5=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-1-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CVL,7=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-1-0-54-1::FLOWVAL=\"0000\",CVLAN=54,SVLAN=762,CV,0=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-2-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CVL,6=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-2-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CVL,5=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-2-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CVL,7=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-2-0-58-1::FLOWVAL=\"0000\",CVLAN=58,SVLAN=762,CV,0=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-3-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CVL,6=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-3-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CVL,5=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-3-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CVL,7=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-3-0-51-1::FLOWVAL=\"0000\",CVLAN=51,SVLAN=762,CV,0=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-4-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CVL,6=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-4-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CVL,5=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-4-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CVL,7=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-4-0-59-1::FLOWVAL=\"0000\",CVLAN=59,SVLAN=762,CV,0=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-5-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CVL,6=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-5-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CVL,5=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-5-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CVL,7=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-5-0-52-1::FLOWVAL=\"0000\",CVLAN=52,SVLAN=762,CV,0=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" -
+   "OLTFLOW-1-1-1-2-6-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CVL,6=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-6-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CVL,5=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-6-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CVL,7=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-6-0-53-1::FLOWVAL=\"0000\",CVLAN=53,SVLAN=762,CV,0=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-7-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CVL,6=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-7-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CVL,5=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-7-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CVL,7=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-7-0-55-1::FLOWVAL=\"0000\",CVLAN=55,SVLAN=762,CV,0=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-8-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CVL,6=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-8-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CVL,5=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-8-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CVL,7=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-8-0-56-1::FLOWVAL=\"0000\",CVLAN=56,SVLAN=762,CV,0=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+
+   /* More Output Follows */ 
+> 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:44:07 
+*  60454 REPT ALM EONT 
+   "ONT-1-1-1-1-12:MN,EDG,SA,3-29,19-43-54: 
+   \"Received Dying Gasp indication from ONT\"" 
+; 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:44:08 
+*  60455 REPT ALM EONT 
+   "ONT-1-1-1-1-13:MN,EDG,SA,3-29,19-43-25: 
+   \"Received Dying Gasp indication from ONT\"" 
+; 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:44:37 
+A  60456 REPT ALM EONT 
+   "ONT-1-1-1-1-2:CL,EDG,SA,3-29,19-44-37: 
+   \"Received Dying Gasp indication from ONT\"" 
+; 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:43:50 
+M  0 COMPLD 
+   /* RTRV-EOLTFLOW::ONT-1-1-1-2-1&&-64 */ 
+   "OLTFLOW-1-1-1-2-9-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CVL,6=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-9-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CVL,5=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-9-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CVL,7=TIBPNA 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-9-0-57-1::FLOWVAL=\"0000\",CVLAN=57,SVLAN=762,CV,0=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-10-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CV,6=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-10-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CV,5=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-10-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CV,7=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-10-0-701-1::FLOWVAL=\"0000\",CVLAN=701,SVLAN=762, 
+   CVLANPBIT=0,DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-11-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CV,6=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-11-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CV,5=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-11-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CV,7=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-11-0-702-1::FLOWVAL=\"0000\",CVLAN=702,SVLAN=762, 
+   CVLANPBIT=0,DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-12-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CV,6=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-12-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CV,5=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-12-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CV,7=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-12-0-60-1::FLOWVAL=\"0000\",CVLAN=60,SVLAN=762, 
+   CVLANPBIT=0,DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-13-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CV,6=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-13-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CV,5=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-13-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CV,7=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-13-0-61-1::FLOWVAL=\"0000\",CVLAN=61,SVLAN=762, 
+   CVLANPBIT=0,DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-14-0-42-1::FLOWVAL=\"0000\",CVLAN=42,SVLAN=42,CV,6=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-14-0-43-1::FLOWVAL=\"0000\",CVLAN=43,SVLAN=43,CV,5=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-14-0-45-1::FLOWVAL=\"0000\",CVLAN=45,SVLAN=45,CV,7=TIBPNAL 
+   DNBWPORF=1,DNSLALVL=3" 
+   "OLTFLOW-1-1-1-2-14-0-62-1::FLOWVAL=\"0000\",CVLAN=62,SVLAN=762, 
+   CVLANPBIT=0,DNBWPORF=1,DNSLALVL=3" 
+; 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:45:39 
+*  60457 REPT ALM EONT 
+   "ONT-1-1-1-5-15:MN,EDG,SA,3-29,19-45-25: 
+   \"Received Dying Gasp indication from ONT\"" 
+; 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:46:18 
+*  60458 REPT ALM EONT 
+   "ONT-1-1-3-5-21:MN,EDG,SA,3-29,19-46-8: 
+   \"Received Dying Gasp indication from ONT\"" 
+; 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:46:41 
+A  60459 REPT ALM EONT 
+   "ONT-1-1-2-7-11:CL,EDG,SA,3-29,19-46-41: 
+   \"Received Dying Gasp indication from ONT\"" 
+; 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:47:05 
+*  60460 REPT ALM EONT 
+   "ONT-1-1-2-7-11:MN,EDG,SA,3-20,7-31-26: 
+   \"Received Dying Gasp indication from ONT\"" 
+; 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:47:22 
+A  60461 REPT ALM BRGPORT 
+   "EBRGPORT-1-1-1-5-10-0-43:CL,DUPADDR,SA,3-29,19-47-22,,,,,: 
+   \"Duplicate MAC address detected\"" 
+; 
+
+<  
+
+   NTQD-BX-7342-02 17-03-29 19:47:22 
+A  60462 REPT ALM EONT 
+   "ONT-1-1-3-5-21:CL,EDG,SA,3-29,19-47-22: 
+   \"Received Dying Gasp indication from ONT\"" 
+; 
+
+
+[END] 2017/3/29 19:51:45

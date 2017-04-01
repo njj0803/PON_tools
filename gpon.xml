@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	所有填写的内容区分大小写
+	pon:PON类型 填gpon
+	oldsvlan：原来的外层VLAN 762
+	oldport：原来的PON口(多PON口割接为起始PON口)，格式安照CRT显示的格式， 7360：1/1/2/1
+	newsvlan：新的外层VLAN 581
+	newport： 新的PON口(多PON口割接为起始PON口)　0/5/3　
+	serviceport：起始的serviceport 1826
+ -->
+ 
+<content>
+	<pon>gpon</pon>
+	<oldsvlan>553</oldsvlan>
+	<oldport>1/1/1/2</oldport>
+	<newsvlan>581</newsvlan>
+	<newport>0/5/3</newport>
+	<serviceport>1826</serviceport>
+</content>
+

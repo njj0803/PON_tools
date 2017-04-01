@@ -1,0 +1,234 @@
+interface epon 0/5
+
+ont add 3 0 loid-auth "138DC9AB6062DD8B" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+ont add 3 1 loid-auth "139827CAAA5651B1" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+ont add 3 2 loid-auth "133D2D1E0ADC66D1" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+ont add 3 3 loid-auth "132A6AB13388D42C" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+ont add 3 4 loid-auth "13223E9AB6D2DCAC" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+ont add 3 5 loid-auth "13106CE0CBDDCDAC" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+ont add 3 6 loid-auth "1321AD3ECD628C23" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+ont add 3 7 loid-auth "13D0B2D2A5A95145" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+ont add 3 8 loid-auth "13CB6B7482A4DD2D" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+ont add 3 9 loid-auth "13EAE29BA772A1B6" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+ont add 3 10 loid-auth "132DE4BC54AB332D" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+ont add 3 11 loid-auth "1318448A9C305A9B" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+ont add 3 12 loid-auth "134CE2AD5D4BC420" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+ont add 3 13 loid-auth "131CA0AC15391CA8" always-on oam ont-lineprofile-id 200  ont-srvprofile-id 1 desc "ONT_NO_DESCRIPTION"
+
+quit
+
+service-port 1826 vlan 581  epon 0/5/3 ont 0 multi-service user-vlan 54 tag-transform translate-and-add inner-vlan 54 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1827 vlan 581  epon 0/5/3 ont 0 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1828 vlan 2181  epon 0/5/3 ont 0 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1829 vlan 2981  epon 0/5/3 ont 0 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1830 vlan 1381  epon 0/5/3 ont 0 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+service-port 1831 vlan 581  epon 0/5/3 ont 1 multi-service user-vlan 58 tag-transform translate-and-add inner-vlan 58 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1832 vlan 581  epon 0/5/3 ont 1 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1833 vlan 2181  epon 0/5/3 ont 1 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1834 vlan 2981  epon 0/5/3 ont 1 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1835 vlan 1381  epon 0/5/3 ont 1 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+service-port 1836 vlan 581  epon 0/5/3 ont 2 multi-service user-vlan 51 tag-transform translate-and-add inner-vlan 51 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1837 vlan 581  epon 0/5/3 ont 2 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1838 vlan 2181  epon 0/5/3 ont 2 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1839 vlan 2981  epon 0/5/3 ont 2 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1840 vlan 1381  epon 0/5/3 ont 2 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+service-port 1841 vlan 581  epon 0/5/3 ont 3 multi-service user-vlan 59 tag-transform translate-and-add inner-vlan 59 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1842 vlan 581  epon 0/5/3 ont 3 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1843 vlan 2181  epon 0/5/3 ont 3 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1844 vlan 2981  epon 0/5/3 ont 3 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1845 vlan 1381  epon 0/5/3 ont 3 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+service-port 1846 vlan 581  epon 0/5/3 ont 4 multi-service user-vlan 52 tag-transform translate-and-add inner-vlan 52 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1847 vlan 581  epon 0/5/3 ont 4 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1848 vlan 2181  epon 0/5/3 ont 4 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1849 vlan 2981  epon 0/5/3 ont 4 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1850 vlan 1381  epon 0/5/3 ont 4 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+service-port 1851 vlan 581  epon 0/5/3 ont 5 multi-service user-vlan 53 tag-transform translate-and-add inner-vlan 53 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1852 vlan 581  epon 0/5/3 ont 5 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1853 vlan 2181  epon 0/5/3 ont 5 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1854 vlan 2981  epon 0/5/3 ont 5 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1855 vlan 1381  epon 0/5/3 ont 5 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+service-port 1856 vlan 581  epon 0/5/3 ont 6 multi-service user-vlan 55 tag-transform translate-and-add inner-vlan 55 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1857 vlan 581  epon 0/5/3 ont 6 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1858 vlan 2181  epon 0/5/3 ont 6 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1859 vlan 2981  epon 0/5/3 ont 6 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1860 vlan 1381  epon 0/5/3 ont 6 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+service-port 1861 vlan 581  epon 0/5/3 ont 7 multi-service user-vlan 56 tag-transform translate-and-add inner-vlan 56 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1862 vlan 581  epon 0/5/3 ont 7 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1863 vlan 2181  epon 0/5/3 ont 7 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1864 vlan 2981  epon 0/5/3 ont 7 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1865 vlan 1381  epon 0/5/3 ont 7 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+service-port 1866 vlan 581  epon 0/5/3 ont 8 multi-service user-vlan 57 tag-transform translate-and-add inner-vlan 57 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1867 vlan 581  epon 0/5/3 ont 8 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1868 vlan 2181  epon 0/5/3 ont 8 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1869 vlan 2981  epon 0/5/3 ont 8 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1870 vlan 1381  epon 0/5/3 ont 8 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+service-port 1871 vlan 581  epon 0/5/3 ont 9 multi-service user-vlan 701 tag-transform translate-and-add inner-vlan 701 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1872 vlan 581  epon 0/5/3 ont 9 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1873 vlan 2181  epon 0/5/3 ont 9 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1874 vlan 2981  epon 0/5/3 ont 9 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1875 vlan 1381  epon 0/5/3 ont 9 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+service-port 1876 vlan 581  epon 0/5/3 ont 10 multi-service user-vlan 702 tag-transform translate-and-add inner-vlan 702 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1877 vlan 581  epon 0/5/3 ont 10 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1878 vlan 2181  epon 0/5/3 ont 10 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1879 vlan 2981  epon 0/5/3 ont 10 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1880 vlan 1381  epon 0/5/3 ont 10 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+service-port 1881 vlan 581  epon 0/5/3 ont 11 multi-service user-vlan 60 tag-transform translate-and-add inner-vlan 60 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1882 vlan 581  epon 0/5/3 ont 11 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1883 vlan 2181  epon 0/5/3 ont 11 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1884 vlan 2981  epon 0/5/3 ont 11 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1885 vlan 1381  epon 0/5/3 ont 11 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+service-port 1886 vlan 581  epon 0/5/3 ont 12 multi-service user-vlan 61 tag-transform translate-and-add inner-vlan 61 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1887 vlan 581  epon 0/5/3 ont 12 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1888 vlan 2181  epon 0/5/3 ont 12 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1889 vlan 2981  epon 0/5/3 ont 12 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1890 vlan 1381  epon 0/5/3 ont 12 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+service-port 1891 vlan 581  epon 0/5/3 ont 13 multi-service user-vlan 62 tag-transform translate-and-add inner-vlan 62 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1892 vlan 581  epon 0/5/3 ont 13 multi-service user-vlan 32 tag-transform translate-and-add inner-vlan 32 inbound traffic-table index 201 outbound traffic-table index 201
+
+service-port 1893 vlan 2181  epon 0/5/3 ont 13 multi-service user-vlan 43 tag-transform translate-and-add inner-vlan 43 inbound traffic-table index 202 outbound traffic-table index 202
+
+service-port 1894 vlan 2981  epon 0/5/3 ont 13 multi-service user-vlan 42 tag-transform translate-and-add inner-vlan 42 inbound traffic-table index 203 outbound traffic-table index 203
+
+service-port 1895 vlan 1381  epon 0/5/3 ont 13 multi-service user-vlan 45 tag-transform translate-and-add inner-vlan 45 inbound traffic-table index 204 outbound traffic-table index 204
+
+btv
+
+igmp user add service-port  1828 no-auth quickleave mac-based
+
+igmp user add service-port  1833 no-auth quickleave mac-based
+
+igmp user add service-port  1838 no-auth quickleave mac-based
+
+igmp user add service-port  1843 no-auth quickleave mac-based
+
+igmp user add service-port  1848 no-auth quickleave mac-based
+
+igmp user add service-port  1853 no-auth quickleave mac-based
+
+igmp user add service-port  1858 no-auth quickleave mac-based
+
+igmp user add service-port  1863 no-auth quickleave mac-based
+
+igmp user add service-port  1868 no-auth quickleave mac-based
+
+igmp user add service-port  1873 no-auth quickleave mac-based
+
+igmp user add service-port  1878 no-auth quickleave mac-based
+
+igmp user add service-port  1883 no-auth quickleave mac-based
+
+igmp user add service-port  1888 no-auth quickleave mac-based
+
+igmp user add service-port  1893 no-auth quickleave mac-based
+quit
+
+multicast-vlan 40
+
+igmp multicast-vlan member service-port  1828
+
+igmp multicast-vlan member service-port  1833
+
+igmp multicast-vlan member service-port  1838
+
+igmp multicast-vlan member service-port  1843
+
+igmp multicast-vlan member service-port  1848
+
+igmp multicast-vlan member service-port  1853
+
+igmp multicast-vlan member service-port  1858
+
+igmp multicast-vlan member service-port  1863
+
+igmp multicast-vlan member service-port  1868
+
+igmp multicast-vlan member service-port  1873
+
+igmp multicast-vlan member service-port  1878
+
+igmp multicast-vlan member service-port  1883
+
+igmp multicast-vlan member service-port  1888
+
+igmp multicast-vlan member service-port  1893
+quit
+
